@@ -1,19 +1,9 @@
-## QUESTÃO 4 ##
-# Escreva um programa que pergunte a quantidade de km percorridos por um carro 
-# alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi 
-# alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60 por dia e 
-# R$ 0,15 por km rodado.
+#Nessa questão é para fazer o calculo do preço total de um aluguel
+#de carros, a partir  de um valor diario(60) e o valor do Km(0.15)
 
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
-def main():
-    print("questao 4")
+#Entrada de dados:
+dias = int(input('Digite o numero de dias de aluguel:\n'))
+distancia = float(input('\nDigite a distância percorrida pelo carro:\n'))
 
-
-    
-if __name__ == '__main__':
-    main()
+#Processamento mais saída de daods:
+print('O valor do aluguel foi de: ',float((dias*60)+(distancia*0.15)))

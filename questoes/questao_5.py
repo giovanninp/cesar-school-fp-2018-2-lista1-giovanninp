@@ -1,21 +1,27 @@
-## QUESTÃO 5 ##
-# Escreva um programa para calcular a redução do tempo de vida de um fumante. 
-# Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. 
-# Considere que um fumante perde 10 minutos de vida a cada cigarro, calcule 
-# quantos dias de vida um fumante perderá. Exiba o total em dias. 
-##
+#Essa questão é relacionada à um calculo de uma possível perda de tempo
+#causada pelo consumo de cigarros.
+
+#A função ceil foi importada para fazer o arredondamento dos valores
+from math import ceil
+
+#Info de boas vindas:
+print('\nBem-Vindo ao FumanteSoft\n')
+
+#Entrada de dados:
+tempFumo = int(input('Digite o numero de anos como fumante:\n'))
+qtdC = int(input('Digite o numero de cigarros consumidos por dia:\n'))
+
+#Processamento de dados:
+#Calculo do numero total de cigarros consumidos:
+nCig = qtdC*(365*tempFumo)
+#Cálculo do número de horas perdidas totais:
+horasPerdTotal: float = (nCig * 10)/60
+#Cálculo do número de dias perdidos:
+diasPerd = horasPerdTotal / 24
+#Cálculo do número de horas perdidas:
+horasPerd = horasPerdTotal % 24
+
+#Saída de dados:
+print('O tempo de vida perdido por conta do fumo foi de:\nDias: ',ceil(diasPerd),' Horas: ' , ceil(horasPerd))
 
 
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
-def main():
-    print("questao 5")
-
-
-    
-if __name__ == '__main__':
-    main()

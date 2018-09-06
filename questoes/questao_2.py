@@ -1,19 +1,10 @@
-## QUESTÃO 2 ##
-# Escreva um programa que converta uma temperatura digitada em °C (graus celsius) 
-# para °F (graus fahrenheit). 
-##
+#Essa questão resolve é para solucionar uma conversão de graus celsius para farenheit.
 
+#Entrada de dados:
+tempC = float(input('Digite o valor da temperatura em celsius:\n'))
 
-##
-# A sua resposta da questão deve ser desenvolvida dentro da função main()!!! 
-# Deve-se substituir o comado print existente pelo código da solução.
-# Para a correta execução do programa, a estrutura atual deve ser mantida,
-# substituindo apenas o comando print(questão...) existente.
-##
-def main():
-    print("questao 2")
+#Processamento de dados:
+tempF = (float(1.8*tempC+32))
 
-
-
-if __name__ == '__main__':
-    main()
+#Saida:
+print('A temperatura em farenheit será de:\n',tempF,'F')
